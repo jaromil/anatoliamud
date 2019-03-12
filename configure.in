@@ -7,6 +7,7 @@ AM_INIT_AUTOMAKE
 # Checks for programs.
 AC_PROG_CC
 AC_PROG_LN_S
+AM_PROG_CC_C_O
 
 # Checks for libraries.
 AC_CHECK_LIB(crypt, crypt)
