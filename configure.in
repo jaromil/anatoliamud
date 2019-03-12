@@ -1,0 +1,75 @@
+# Process this file with autoconf to produce a configure script.
+AC_INIT(AnatoliaMUD, 20101006, bugs@anatoliamud.org)
+#AC_CONFIG_SRCDIR([src])
+AM_CONFIG_HEADER(src/config.h)
+AM_INIT_AUTOMAKE
+
+# Checks for programs.
+AC_PROG_CC
+AC_PROG_LN_S
+
+# Checks for libraries.
+AC_CHECK_LIB(crypt, crypt)
+AC_CHECK_LIB(nsl, gethostbyname)
+#AC_CHECK_LIB(socket, socket, ac_need_libsocket=1, ac_try_nsl=1)
+AC_CHECK_LIB(socket, connect)
+
+# Checks for header files.
+AC_HEADER_DIRENT
+AC_HEADER_STDC
+AC_HEADER_SYS_WAIT
+AC_CHECK_HEADERS([fcntl.h malloc.h netdb.h netinet/in.h stdlib.h string.h sys/socket.h sys/time.h unistd.h crypt.h])
+
+# Checks for typedefs, structures, and compiler characteristics.
+AC_C_CONST
+AC_TYPE_SIZE_T
+AC_HEADER_TIME
+
+# Checks for library functions.
+AC_TYPE_SIGNAL
+AC_CHECK_FUNCS([gethostbyaddr gettimeofday])
+AC_CHECK_FUNCS([memmove memset strstr])
+AC_CHECK_FUNCS([select socket])
+AC_CHECK_FUNCS([isascii])
+AC_CHECK_FUNCS([crypt])
+AC_CHECK_FUNCS([srand srandom])
+
+AC_ARG_ENABLE(fast-server, [  --enable-fast-server    Enable optimization for faster servers])
+AC_ARG_ENABLE(nocrypt,     [  --enable-nocrypt        Disables password encryption in player files])
+
+AC_ARG_WITH(src-install, [  --with-src-install[[=DIR]] Enable installation of Anatolia C code for dev])
+AC_ARG_WITH(doc-install, [  --with-doc-install[[=DIR]] Enable installation of Anatolia documentation])
+
+if test "$prefix" = "NONE"; then
+  ana_inst_prefix="$ac_default_prefix"
+else
+  ana_inst_prefix="$prefix"
+fi
+
+if test -n "${with_src_install}"; then
+  if test "${with_src_install}" = "yes"; then
+    config_src_dir="${ana_inst_prefix}/src"
+  else 
+    config_src_dir="${with_src_install}"
+  fi
+fi
+
+if test -n "${with_doc_install}"; then
+  if test "${with_doc_install}" = "yes"; then
+    config_doc_dir="${ana_inst_prefix}/doc"
+  else 
+    config_doc_dir="${with_doc_install}"
+  fi
+fi
+
+AC_SUBST(config_src_dir)
+AC_SUBST(config_doc_dir)
+
+AM_CONDITIONAL(ANA_FAST_SERVER, test -n "${enable_fast_server}")
+AM_CONDITIONAL(ANA_NOCRYPT, test -n "${enable_fast_server}")
+
+AM_CONDITIONAL(ANA_SRC_INSTALL, test -n "${with_src_install}")
+AM_CONDITIONAL(ANA_DOC_INSTALL, test -n "${with_doc_install}")
+
+AC_OUTPUT([Makefile src/Makefile bin/Makefile etc/Makefile doc/Makefile doc/License/Makefile doc/Merc-Docs/Makefile doc/Old-readmes/Makefile doc/Updates/Makefile doc/Samples/Makefile var/Makefile var/run/Makefile var/log/Makefile lib/Makefile lib/areas/Makefile lib/gods/Makefile lib/notes/Makefile lib/players/Makefile lib/remort/Makefile])
+

@@ -1,0 +1,555 @@
+#PLAYER
+Name Conrad~
+Id   1022910318
+LogO 1023677209
+Vers 7
+Etho 1
+Home 0
+Cab  5
+Dead 0
+Ques 0
+Prom <%n: %hhp %mm %vmv Opp:<%o>> ~
+Race human~
+Sex  1
+Cla  3
+Levl 100
+Plyd 6
+Not  0 0 0 0 0
+Scro 22
+Room 5383
+HMV  10000 10000 92
+Gold 147
+Silv 7965
+Banks 0
+Bankg 0
+Exp  100000
+Act  DEFINOQ
+Comm ANO
+Pos  8
+Prac 5
+Alig  1000
+Attr 23 17 20 20 10 14
+Pass ~
+Titl  The Implementor~
+Pnts 0
+TSex 1
+LLev 0
+HMVP 10000 10000 106
+CndC  0 34 41 41 48 100
+Sk 100 'reserved'
+Sk 100 'absorb'
+Sk 100 'acetum primus'
+Sk 100 'acid arrow'
+Sk 100 'acid blast'
+Sk 100 'acute vision'
+Sk 100 'adamantite golem'
+Sk 100 'aid'
+Sk 100 'amnesia'
+Sk 100 'animate dead'
+Sk 100 'animate object'
+Sk 100 'armor'
+Sk 100 'assist'
+Sk 100 'astral walk'
+Sk 100 'attract other'
+Sk 100 'bark skin'
+Sk 100 'black death'
+Sk 100 'blade barrier'
+Sk 100 'bless'
+Sk 100 'bless weapon'
+Sk 100 'blindness'
+Sk 100 'bluefire'
+Sk 100 'burning hands'
+Sk 100 'call lightning'
+Sk 100 'calm'
+Sk 100 'cancellation'
+Sk 100 'cause critical'
+Sk 100 'cause light'
+Sk 100 'cause serious'
+Sk 100 'caustic font'
+Sk 100 'chain lightning'
+Sk 100 'charm person'
+Sk 100 'chromatic orb'
+Sk 100 'control undead'
+Sk 100 'chill touch'
+Sk 100 'colour spray'
+Sk 100 'continual light'
+Sk 100 'control weather'
+Sk 100 'corruption'
+Sk 100 'create food'
+Sk 100 'create rose'
+Sk 100 'create spring'
+Sk 100 'create water'
+Sk 100 'cure blindness'
+Sk 100 'cure critical'
+Sk 100 'cure disease'
+Sk 100 'cure light'
+Sk 100 'cure poison'
+Sk 100 'cure serious'
+Sk 100 'curse'
+Sk 100 'cursed lands'
+Sk 100 'deadly venom'
+Sk 100 'deafen'
+Sk 100 'demonfire'
+Sk 100 'desert fist'
+Sk 100 'detect evil'
+Sk 100 'detect good'
+Sk 100 'detect hide'
+Sk 100 'detect invis'
+Sk 100 'detect magic'
+Sk 100 'detect poison'
+Sk 100 'detect undead'
+Sk 100 'disenchant armor'
+Sk 100 'disenchant weapon'
+Sk 100 'disintegrate'
+Sk 100 'dismantle'
+Sk 100 'dispel evil'
+Sk 100 'dispel good'
+Sk 100 'dispel magic'
+Sk 100 'disruption'
+Sk 100 'dragon breath'
+Sk 100 'dragon strength'
+Sk 100 'dragons breath'
+Sk 100 'drain'
+Sk 100 'earthfade'
+Sk 100 'earthmaw'
+Sk 100 'earthquake'
+Sk 100 'elemental sphere'
+Sk 100 'enchant armor'
+Sk 100 'enchant weapon'
+Sk 100 'energy drain'
+Sk 100 'enhanced armor'
+Sk 100 'enlarge'
+Sk 100 'etheral fist'
+Sk 100 'faerie fire'
+Sk 100 'faerie fog'
+Sk 100 'farsight'
+Sk 100 'fear'
+Sk 100 'fire and ice'
+Sk 100 'fireball'
+Sk 100 'fireproof'
+Sk 100 'firestream'
+Sk 100 'fire shield'
+Sk 100 'flamestrike'
+Sk 100 'fly'
+Sk 100 'floating disc'
+Sk 100 'forcecage'
+Sk 100 'frenzy'
+Sk 100 'frostbolt'
+Sk 100 'fumble'
+Sk 100 'galvanic whip'
+Sk 100 'gate'
+Sk 100 'giant strength'
+Sk 100 'grounding'
+Sk 100 'group defense'
+Sk 100 'group heal'
+Sk 100 'hallucination'
+Sk 100 'hand of undead'
+Sk 100 'harm'
+Sk 100 'haste'
+Sk 100 'heal'
+Sk 100 'healing light'
+Sk 100 'heat metal'
+Sk 100 'helical flow'
+Sk 100 'hellfire'
+Sk 100 'holy aura'
+Sk 100 'holy fury'
+Sk 100 'holy word'
+Sk 100 'hurricane'
+Sk 100 'hydroblast'
+Sk 100 'iceball'
+Sk 100 'identify'
+Sk 100 'improved detect'
+Sk 100 'improved invis'
+Sk 100 'infravision'
+Sk 100 'insanity'
+Sk 100 'inspire'
+Sk 100 'invisibility'
+Sk 100 'iron body'
+Sk 100 'iron golem'
+Sk 100 'knock'
+Sk 100 'know alignment'
+Sk 100 'lesser golem'
+Sk 100 'lethargic mist'
+Sk 100 'light arrow'
+Sk 100 'lightning bolt'
+Sk 100 'lightning shield'
+Sk 100 'link'
+Sk 100 'lion help'
+Sk 100 'locate object'
+Sk 100 'love potion'
+Sk 100 'magic jar'
+Sk 100 'magic missile'
+Sk 100 'magic resistance'
+Sk 100 'magnetic trust'
+Sk 100 'mass healing'
+Sk 100 'mass invis'
+Sk 100 'mass sanctuary'
+Sk 100 'master healing'
+Sk 100 'mend'
+Sk 100 'mind light'
+Sk 100 'mind wrack'
+Sk 100 'mind wrench'
+Sk 100 'mist walk'
+Sk 100 'mummify'
+Sk 100 'mysterious dream'
+Sk 100 'nexus'
+Sk 100 'pass door'
+Sk 100 'plague'
+Sk 100 'poison'
+Sk 100 'polymorph'
+Sk 100 'portal'
+Sk 100 'protection cold'
+Sk 100 'protection evil'
+Sk 100 'protection good'
+Sk 100 'protection heat'
+Sk 100 'protection negative'
+Sk 100 'protective shield'
+Sk 100 'power word kill'
+Sk 100 'power word stun'
+Sk 100 'quantum spike'
+Sk 100 'ranger staff'
+Sk 100 'ray of truth'
+Sk 100 'recharge'
+Sk 100 'refresh'
+Sk 100 'reincarnation'
+Sk 100 'remove curse'
+Sk 100 'remove fear'
+Sk 100 'remove tattoo'
+Sk 100 'resilience'
+Sk 100 'restoring light'
+Sk 100 'sanctify lands'
+Sk 100 'sanctuary'
+Sk 100 'sand storm'
+Sk 100 'scream'
+Sk 100 'severity force'
+Sk 100 'shield'
+Sk 100 'shielding'
+Sk 100 'shocking grasp'
+Sk 100 'shocking trap'
+Sk 100 'sleep'
+Sk 100 'slow'
+Sk 100 'soften'
+Sk 100 'solar flight'
+Sk 100 'sonic resonance'
+Sk 100 'soul bind'
+Sk 100 'spectral furor'
+Sk 100 'stone golem'
+Sk 100 'stone skin'
+Sk 100 'suffocate'
+Sk 100 'sulfurus spray'
+Sk 100 'summon'
+Sk 100 'summon air elemental'
+Sk 100 'summon earth elemental'
+Sk 100 'summon fire elemental'
+Sk 100 'summon lightning elemental'
+Sk 100 'summon water elemental'
+Sk 100 'summon shadow'
+Sk 100 'superior heal'
+Sk 100 'tattoo'
+Sk 100 'teleport'
+Sk 100 'transfer object'
+Sk 100 'tsunami'
+Sk 100 'turn'
+Sk 100 'vampiric blast'
+Sk 100 'ventriloquate'
+Sk 100 'web'
+Sk 100 'windwall'
+Sk 100 'witch curse'
+Sk 100 'wrath'
+Sk 100 'weaken'
+Sk 100 'word of recall'
+Sk 100 'crush'
+Sk 100 'general purpose'
+Sk 100 'high explosive'
+Sk 100 'arrow'
+Sk 100 'axe'
+Sk 100 'bow'
+Sk 100 'dagger'
+Sk 100 'flail'
+Sk 100 'mace'
+Sk 100 'polearm'
+Sk 100 'shield block'
+Sk 100 'spear'
+Sk 100 'sword'
+Sk 100 'whip'
+Sk 100 'second weapon'
+Sk 100 'ambush'
+Sk 100 'area attack'
+Sk 100 'assassinate'
+Sk 100 'backstab'
+Sk 100 'bash'
+Sk 100 'bash door'
+Sk 100 'bear call'
+Sk 100 'berserk'
+Sk 100 'blackguard'
+Sk 100 'blackjack'
+Sk 100 'blind fighting'
+Sk 100 'blindness dust'
+Sk 100 'blink'
+Sk 100 'butcher'
+Sk 100 'caltraps'
+Sk 100 'camouflage'
+Sk 100 'camouflage move'
+Sk 100 'camp'
+Sk 100 'circle'
+Sk 100 'control animal'
+Sk 100 'cleave'
+Sk 100 'concentrate'
+Sk 100 'counter'
+Sk 100 'critical strike'
+Sk 100 'cross block'
+Sk 100 'detect hidden'
+Sk 100 'detect sneak'
+Sk 100 'dirt kicking'
+Sk 100 'disarm'
+Sk 100 'dodge'
+Sk 100 'dual backstab'
+Sk 100 'enchant sword'
+Sk 100 'endure'
+Sk 100 'enhanced damage'
+Sk 100 'entangle'
+Sk 100 'envenom'
+Sk 100 'escape'
+Sk 100 'explode'
+Sk 100 'ground strike'
+Sk 100 'hand block'
+Sk 100 'hand to hand'
+Sk 100 'hara kiri'
+Sk 100 'headguard'
+Sk 100 'herbs'
+Sk 100 'kick'
+Sk 100 'lash'
+Sk 100 'light resistance'
+Sk 100 'lion call'
+Sk 100 'make arrow'
+Sk 100 'make bow'
+Sk 100 'mental attack'
+Sk 100 'neckguard'
+Sk 100 'nerve'
+Sk 100 'parry'
+Sk 100 'perception'
+Sk 100 'push'
+Sk 100 'rescue'
+Sk 100 'sense life'
+Sk 100 'settraps'
+Sk 100 'shield cleave'
+Sk 100 'smithing'
+Sk 100 'spell craft'
+Sk 100 'strangle'
+Sk 100 'swimming'
+Sk 100 'target'
+Sk 100 'throw'
+Sk 100 'tiger power'
+Sk 100 'track'
+Sk 100 'trip'
+Sk 100 'vampire'
+Sk 100 'vampiric bite'
+Sk 100 'vampiric touch'
+Sk 100 'vanish'
+Sk 100 'warcry'
+Sk 100 'weapon cleave'
+Sk 100 'second attack'
+Sk 100 'secondary attack'
+Sk 100 'third attack'
+Sk 100 'fourth attack'
+Sk 100 'fifth attack'
+Sk 100 'blue arrow'
+Sk 100 'fast healing'
+Sk 100 'green arrow'
+Sk 100 'grip'
+Sk 100 'haggle'
+Sk 100 'hide'
+Sk 100 'katana'
+Sk 100 'lay hands'
+Sk 100 'lore'
+Sk 100 'mastering pound'
+Sk 100 'mastering sword'
+Sk 100 'meditation'
+Sk 100 'peek'
+Sk 100 'pick lock'
+Sk 100 'poison smoke'
+Sk 100 'quiet movement'
+Sk 100 'recall'
+Sk 100 'red arrow'
+Sk 100 'sneak'
+Sk 100 'steal'
+Sk 100 'scrolls'
+Sk 100 'staves'
+Sk 100 'tame'
+Sk 100 'trance'
+Sk 100 'white arrow'
+Sk 100 'wands'
+Sk 100 'mortal strike'
+Sk 100 'bandage'
+Sk 100 'cabal recall'
+Sk 100 'bloodthirst'
+Sk 100 'spellbane'
+Sk 100 'resistance'
+Sk 100 'deathblow'
+Sk 100 'trophy'
+Sk 100 'truesight'
+Sk 100 'terangreal'
+Sk 100 'kassandra'
+Sk 100 'sebat'
+Sk 100 'matandra'
+Affc 'spellbane'   7  95   9 -25  24    8388608
+Relig 0
+Haskilled 17
+Antkilled 3
+PlayLog 1
+160 83
+156 3
+152 11
+151 2
+-1
+End
+
+#O
+Vnum 20010
+Cond 100
+Nest 0
+WLoc -1
+Cost 19900
+Spell 3 'lightning breath'
+End
+
+#O
+Vnum 3365
+Cond 100
+Nest 0
+WLoc -1
+Cost 640
+End
+
+#O
+Vnum 3364
+Cond 100
+Nest 0
+WLoc -1
+Cost 1280
+End
+
+#O
+Vnum 3350
+Cond 100
+Nest 0
+WLoc 12
+Cost 1280
+Val  1 11 18 11 0
+End
+
+#O
+Vnum 3353
+Cond 100
+Nest 0
+WLoc -1
+Cost 900
+End
+
+#O
+Vnum 3355
+Cond 100
+Nest 0
+WLoc -1
+Cost 510
+End
+
+#O
+Vnum 20010
+Cond 100
+Nest 0
+WLoc -1
+Cost 19900
+Spell 3 'lightning breath'
+End
+
+#O
+Vnum 20010
+Cond 100
+Nest 0
+WLoc -1
+Cost 19900
+Spell 3 'lightning breath'
+End
+
+#O
+Vnum 3365
+Cond 100
+Nest 0
+WLoc -1
+Cost 640
+End
+
+#O
+Vnum 3364
+Cond 100
+Nest 0
+WLoc -1
+Cost 1280
+End
+
+#O
+Vnum 3350
+Cond 100
+Nest 0
+WLoc -1
+Cost 1280
+End
+
+#O
+Vnum 3353
+Cond 100
+Nest 0
+WLoc -1
+Cost 900
+End
+
+#O
+Vnum 3355
+Cond 100
+Nest 0
+WLoc -1
+Cost 510
+End
+
+#O
+Vnum 3365
+Cond 100
+Nest 0
+WLoc -1
+Cost 640
+End
+
+#O
+Vnum 3364
+Cond 100
+Nest 0
+WLoc -1
+Cost 1280
+End
+
+#O
+Vnum 3350
+Cond 100
+Nest 0
+WLoc -1
+Cost 1280
+End
+
+#O
+Vnum 3353
+Cond 100
+Nest 0
+WLoc -1
+Cost 900
+End
+
+#O
+Vnum 3354
+Cond 100
+Nest 0
+WLoc -1
+Cost 810
+End
+
+#END

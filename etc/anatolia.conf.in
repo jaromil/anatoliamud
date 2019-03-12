@@ -1,0 +1,43 @@
+#
+# Anatolia Configuration file. Syntax is simple:
+#    <Keyword> <Value>
+#
+# Anatolia Root
+#
+AnaHome ENTER_ANA_HOME
+#AnaPort 4000
+
+# Anatolia Configuration Directory
+EtcDir ENTER_ANA_ETC
+
+# Anatolia Var Dir
+VarDir ENTER_ANA_VAR
+
+# Anatolia Log Dir
+LogDir ENTER_ANA_VAR/log
+
+# Anatolia Library dir
+LibDir ENTER_ANA_LIB
+
+# Anatolia Bin Dir
+BinDir ENTER_ANA_BIN
+
+# Maximum number of aliases that a user can set (max of maximum is 50)
+#MaxAlias 20
+
+# In order for a player to be able to save limited objects he/she has to
+# be playing the game regularly, giving chance to other players to get the
+# limited item from each other.
+#
+# The number of days to be used in calculating the saving of limited objs.
+#MaxTimeLog 14
+# The number of total minutes required to be spent within the above number
+# of days
+#MinTimeLimit 600
+#
+# For very busy servers or for servers whose reverse-dns lookups take 
+# a lot of time for their own reason:
+#DNSEnabled 1
+
+# End the configuration file
+End

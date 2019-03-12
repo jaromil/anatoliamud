@@ -1,0 +1,34 @@
+TASKS:
+
+92- Ask for IBM and HP_UX platforms for compilation: check __hpux for comm.c
+93- AC_C_CONST addition for AIX if necessary:
+    #if defined(_AIX)
+    #if !defined(const)
+    #define const
+    #endif
+
+FUTURE PLANS:
+1- MySQL support:
+   A. For areas and players
+      i. Has to be backward compatible
+      ii. Add migration tools 
+   B. For skills, spells
+   C. For races, classes
+2- Built-in OLC
+   A. Will support MySQL area storage
+      i. Support all MySQL fields listed above: 1.A-...
+   B. If there's time, support text file database support
+3- High Availability/Load Balancing
+   A. Clustering per area(s)
+   B. Standby server
+4- Localization support with language translation
+   A. Reseaerch papers:
+      i. http://www.research.att.com/~hiyan/translation/
+      ii. http://www.lti.cs.cmu.edu/Research/Diplomat/
+      iii. http://www.isi.edu/natural-language/
+      iv. http://www.isi.edu/natural-language/projects/GAZELLE.html
+      v. http://www.ai.mit.edu/people/mcollins/
+   B. Existing codes:
+      i. ISI rewrite decoder
+      ii. Giza++
+      

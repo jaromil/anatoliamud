@@ -1,0 +1,110 @@
+#!/bin/sh
+#
+# anatolia  Start Anatolia MUD Services
+#
+# chkconfig: 345 86 14
+# description:  Starts/stops Anatolia MUD Services
+#
+# processname: anatolia
+# config: ENTER_ANA_ETC/anatolia.conf
+# pidfile: ENTER_ANA_VAR/run/anatolia.pid
+
+ANA_HOME=ENTER_ANA_HOME
+ANA_PORT=4000
+
+ANA_BIN=ENTER_ANA_BIN
+ANA_ETC=ENTER_ANA_ETC
+ANA_VAR=ENTER_ANA_VAR
+ANA_LOG=$ANA_VAR/log
+ANA_RUN=$ANA_VAR/run
+
+ANA_LOG_LINK=$ANA_LOG/anatolia.log
+ANA_PID_FILE=$ANA_RUN/anatolia.pid
+
+ANA_CONF_FILE=$ANA_ETC/anatolia.conf
+
+ANA_TSTAMP=`date "+20%y%m%d"`
+ANA_LOG_FILE=$ANA_LOG/anatolia.log.$ANA_TSTAMP
+
+# Function declarations
+#
+start_anatolia() {
+  while [ 1 ]; do
+    $ANA_BIN/anatolia $ANA_PORT -rd $ANA_HOME \
+			-c $ANA_CONF_FILE >> $ANA_LOG_FILE 2>&1 &
+    ANA_RUN_PID="$!"
+    echo $ANA_RUN_PID > $ANA_PID_FILE
+
+    rm -f $ANA_LOG_LINK
+    ln -s $ANA_LOG_FILE $ANA_LOG_LINK
+
+    wait $ANA_RUN_PID
+    ANA_RUN_EC="$?"
+    if [ "$ANA_RUN_EC" = 1 ]; then
+      exit 0
+    fi
+  done
+}
+
+# Run the code
+#
+ANA_STATUS=""
+if [ -r $ANA_PID_FILE ]; then
+  ANA_PID=`cat $ANA_PID_FILE`
+
+  if [ -n "$ANA_PID" ]; then 
+    ANA_STATUS=`ps -p $ANA_PID | grep $ANA_PID`
+  fi
+fi
+
+case "$1" in
+status)
+  if [ -n "$ANA_STATUS" ]; then
+    echo "Anatolia is running."
+  else
+    echo "Anatolia is NOT running."
+  fi
+  ;;
+
+start)
+  if [ -n "$ANA_STATUS" ]; then
+    echo "Anatolia is ALREADY running."
+    exit
+  fi
+
+  echo "Starting Anatolia MUD Services..."
+  start_anatolia &
+  ;;
+
+stop)
+  if [ -z "$ANA_STATUS" ]; then
+    echo "Anatolia is NOT running ALREADY."
+    exit
+  fi
+
+  echo "Stopping Anatolia MUD Services..."
+  kill $ANA_PID
+  sleep 1
+
+  rm -f $ANA_PID_FILE
+
+  ANA_STATUS=`ps -p $ANA_PID | grep $ANA_PID`
+  if [ -n "$ANA_STATUS" ]; then sleep 1; fi
+
+  ANA_STATUS=`ps -p $ANA_PID | grep $ANA_PID`
+  if [ -n "$ANA_STATUS" ]; then sleep 1; fi
+
+  ANA_STATUS=`ps -p $ANA_PID | grep $ANA_PID`
+  if [ -n "$ANA_STATUS" ]; then kill -9 $ANA_PID; fi
+  ;;
+
+restart)
+  $0 stop
+  $0 start
+  ;;
+
+*)
+  echo "Usage:"
+  echo "       $0 {start|stop|restart|status}"
+  ;;
+esac

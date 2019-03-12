@@ -1,0 +1,44 @@
+* Ease of Administration: Last Update: 06/02/2010
+  i. Autoconf/Automake Support
+    1. Typing: ./configure; make && make install will install the MUD.
+  ii. Added or kept support for the following (new) OSes/CPUs
+    1. Linux/AMD64
+    2. Linux/Alpha
+    3. Linux/x86
+    4. FreeBSD
+    5. NetBSD
+    6. MacOSX
+    7. Solaris
+    8. CygWin (Info for newbies: Microsoft Windows Command Mode Runable Unix)
+    9. HP-UX (Not fully tested)
+    10. AIX (Not fully tested)
+  iii. Dropping Support for discontinued OSes/Platforms
+    1. Apollo
+    2. Interactive
+    3. Next
+    4. Sequent
+    5. Ultrix
+    6. SunOS (not Solaris)
+    7. Macintosh (not MAC OSX)
+    8. MS-DOS (see CygWin)
+  iv. Startup Configuration File
+    1. Added a new startup configuration file, so that basic configuration
+       changes will no longer require a re-compilation.
+         i. All directories and sub-directories to run the system
+        ii. Network port number that anatolia has to bind to
+       iii. Maximum number of aliases, player playing time logging
+  v. More pleasant/standard development environment
+    1. Added optional installation of source directories via ./configure option:
+       --with-src-install[=DIR]
+    2. Migrated MOST skills and spells to be checked by skill_failure_check()
+       and skill_failure_nomessage() functions
+  vi. Made the installation of Anatolia Documentation optional via ./configure
+       option: --with-doc-install[=DIR]
+  vii. Added support for single user mode
+  viii. Added support for enabling and disabling reverse-dns-lookups for players
+       IP addresses. This feature is also configurable via anatolia.conf
+  ix. Updated as many documentation as possible: Readme.txt, Install.txt,
+        Anatolia3.1.txt
+  x. Fixed the reported bugs for the version 3.1.
+  xi. Fixed the compilation issues for the last version 3.1.1 with newer GCC.
+
